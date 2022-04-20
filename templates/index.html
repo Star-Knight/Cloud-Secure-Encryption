@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Login Form Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<style>
+  .btn-primary {
+    color: rgb(19, 15, 15);
+    background-color: #e8e9ec;
+    border-color: #ffffff;
+    align-items: center;
+    width: 100%;
+  border: none;
+  padding: 18px;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #e8e9ec;
+  color: #777;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  letter-spacing: 0.2px;
+  outline: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <form action="#" method="post">
+    <h1>Enter Password to Save</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="text" placeholder="text" name="nm" />
+      </div>
+    </div>
+    <div class="action">
+      <button>Enter</button>
+      
+    </div>
+  </form>
+  <div class="action">
+    <a href="{{ url_for('disp') }}" class='btn btn-primary'>Display</a>
+    
+  </div>
+</div>
+<!-- partial -->
+  <script  src="../static/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+
+<head>
+  <style>
+    td,
+    th {
+      width: 15rem;
+      height: 2rem;
+      border: 1px solid rgb(188, 236, 226);
+      background-color: rgba(188, 236, 226, 0.425);
+      font-weight: 500;
+      text-align: center;
+    }
+
+    th {
+      background: rgb(191, 194, 147);
+      border-color: white;
+    }
+
+    body {
+      padding: 1rem;
+    }
+  </style>
+</head>
+<div style="background-color: rgba(251, 219, 198, 0.637)">
+  <title>Table</title>
+  <div class=page>
+    <h1 style=" margin-left: 600px;">Passwords</h1>
+    <div>
+
+      {% for table in tables %}
+      <!-- <h2>{{titles[loop.index]}}</h2> -->
+      <div style="margin-left: 390px; width:700px; font-weight: 500;">
+        {{ table|safe }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
